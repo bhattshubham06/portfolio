@@ -14,8 +14,10 @@ type HeroProps = {
 };
 
 export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProps) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const resumeLink = resumeHref ?? personalInfo.resumeUrl ?? "/Shubham_Bhatt_resume.pdf";
   const { heroImage } = personalInfo;
+  const heroSrc = `${basePath}${heroImage.src.startsWith("/") ? "" : "/"}${heroImage.src}`;
 
   return (
     <section id="hero" className="grid gap-10 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -125,7 +127,7 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
         >
           <div className="overflow-hidden rounded-2xl border border-gold/60 bg-white/5 shadow-[0_15px_60px_rgba(245,158,11,0.25)]">
             <Image
-              src={heroImage.src}
+              src={heroSrc}
               alt={heroImage.alt}
               width={960}
               height={1280}

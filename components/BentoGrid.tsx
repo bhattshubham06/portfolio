@@ -127,6 +127,7 @@ type BentoProps = {
 export function BentoGrid({ skills, achievements, education, certifications }: BentoProps) {
   const [expandedCert, setExpandedCert] = useState<string | null>(null);
   const selectedCert = certificationCards.find((c) => c.label === expandedCert);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   const toggleCert = useCallback((label: string) => {
     setExpandedCert((prev) => (prev === label ? null : label));
@@ -204,7 +205,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
         >
           <div className="overflow-hidden rounded-3xl">
             <Image
-              src="/Shubham_photo_2.jpeg"
+              src={`${basePath}/Shubham_photo_2.jpeg`}
               alt="Shubham Bhatt portrait"
               width={900}
               height={1100}
@@ -249,7 +250,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
                 >
                   <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                     <Image
-                      src={item.src}
+                      src={`${basePath}${item.src}`}
                       alt={item.label}
                       width={600}
                       height={360}
@@ -289,7 +290,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
                 <p className="text-lg font-display text-white">{selectedCert.label}</p>
                 <div className="overflow-hidden rounded-xl border border-white/10 bg-black/70">
                   <Image
-                    src={selectedCert.src}
+                    src={`${basePath}${selectedCert.src}`}
                     alt={selectedCert.label}
                     width={1400}
                     height={900}

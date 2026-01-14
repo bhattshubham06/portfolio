@@ -15,9 +15,10 @@ type HeroProps = {
 
 export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProps) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-  const resumeLink = resumeHref ?? personalInfo.resumeUrl ?? "/Shubham_Bhatt_resume.pdf";
+  const withBase = (path: string) => `${basePath}${path.startsWith("/") ? "" : "/"}${path}`;
+  const resumeLink = withBase(resumeHref ?? personalInfo.resumeUrl ?? "/Shubham_Bhatt_resume.pdf");
   const { heroImage } = personalInfo;
-  const heroSrc = `${basePath}${heroImage.src.startsWith("/") ? "" : "/"}${heroImage.src}`;
+  const heroSrc = withBase(heroImage.src);
 
   return (
     <section id="hero" className="grid gap-10 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

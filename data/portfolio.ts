@@ -127,7 +127,7 @@ export const portfolioData: PortfolioData = {
       impact: "$108,636 potential annual savings",
       metrics: "Recall Score: 75%",
       tools: ["Python", "Scikit-learn", "Pandas", "Jupyter Notebook", "EDA"],
-      githubUrl: "https://github.com/bhattshubham06"
+      githubUrl: "https://github.com/bhattshubham06/Credit-Card-Fraud-Detection"
     },
     {
       title: "Lead Score/Conversion Model",
@@ -135,7 +135,7 @@ export const portfolioData: PortfolioData = {
       impact: "Optimized sales outreach and resource allocation.",
       metrics: "Model performance tuned for revenue velocity",
       tools: ["Python", "Machine Learning", "Data Transformation", "Model Evaluation"],
-      githubUrl: "https://github.com/bhattshubham06"
+      githubUrl: "https://github.com/bhattshubham06/Lead-Score"
     },
     {
       title: "CodeIQ",
@@ -143,7 +143,7 @@ export const portfolioData: PortfolioData = {
       impact: "Reliable validation flows with auditability across services.",
       metrics: "Traceable releases | Zero-downtime deploys",
       tools: ["Full-stack Architecture", "Python", "Data Validation"],
-      githubUrl: "https://github.com/bhattshubham06"
+      githubUrl: "https://github.com/bhattshubham06/"
     }
   ],
   skills: {

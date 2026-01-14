@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, LineChart, MapPin, Mail, Phone } from "lucide-react";
 import type { PortfolioData } from "../data/portfolio";
 
+const computeBasePath = () => {
+  const envBase = process.env.NEXT_PUBLIC_BASE_PATH;
+  if (envBase) return envBase;
+  if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    if (parts.length > 0) return `/${parts[0]}`;
+  }
+  return "";
+};
+
 const kineticHeadlines = ["DataOps Engineering", "MLOps Governance", "Executive Analytics", "Business Strategy"];
 
 type HeroProps = {
@@ -14,7 +24,7 @@ type HeroProps = {
 };
 
 export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProps) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const basePath = computeBasePath();
   const withBase = (path: string) => `${basePath}${path.startsWith("/") ? "" : "/"}${path}`;
   const resumeLink = withBase(resumeHref ?? personalInfo.resumeUrl ?? "/Shubham_Bhatt_resume.pdf");
   const { heroImage } = personalInfo;

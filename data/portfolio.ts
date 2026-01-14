@@ -85,7 +85,7 @@ export const portfolioData: PortfolioData = {
       "A Data-driven Strategist and MBA candidate specializing in Strategy and Consulting. With 2 years of experience as a DataOps Engineer and an Executive PG in Data Science from IIIT Bangalore, I excel at transforming complex data into high-level business ROI.",
     resumeUrl: "/Shubham_Bhatt_resume.pdf",
     heroImage: {
-      src: "/shubham-executive.jpeg",
+      src: "/Shubham_photo_2.jpeg",
       alt: "Portrait of Shubham Bhatt"
     }
   },

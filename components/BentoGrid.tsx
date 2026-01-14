@@ -117,6 +117,16 @@ const certificationCards = [
   }
 ];
 
+const computeBasePath = () => {
+  const envBase = process.env.NEXT_PUBLIC_BASE_PATH;
+  if (envBase) return envBase;
+  if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    if (parts.length > 0) return `/${parts[0]}`;
+  }
+  return "";
+};
+
 type BentoProps = {
   skills: PortfolioData["skills"];
   achievements: PortfolioData["achievements"];
@@ -127,7 +137,7 @@ type BentoProps = {
 export function BentoGrid({ skills, achievements, education, certifications }: BentoProps) {
   const [expandedCert, setExpandedCert] = useState<string | null>(null);
   const selectedCert = certificationCards.find((c) => c.label === expandedCert);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const basePath = computeBasePath();
 
   const toggleCert = useCallback((label: string) => {
     setExpandedCert((prev) => (prev === label ? null : label));
@@ -250,7 +260,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
                 >
                   <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                     <Image
-                      src={`${basePath}${item.src}`}
+                      src={`${basePath}${encodeURI(item.src)}`}
                       alt={item.label}
                       width={600}
                       height={360}
@@ -290,7 +300,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
                 <p className="text-lg font-display text-white">{selectedCert.label}</p>
                 <div className="overflow-hidden rounded-xl border border-white/10 bg-black/70">
                   <Image
-                    src={`${basePath}${selectedCert.src}`}
+                    src={`${basePath}${encodeURI(selectedCert.src)}`}
                     alt={selectedCert.label}
                     width={1400}
                     height={900}

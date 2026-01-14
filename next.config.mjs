@@ -10,9 +10,6 @@ const nextConfig = {
   },
   assetPrefix: isProd ? `/${repo}` : undefined,
   basePath: isProd ? `/${repo}` : undefined,
-  experimental: {
-    typedRoutes: true
-  }
 };
 
 export default nextConfig;

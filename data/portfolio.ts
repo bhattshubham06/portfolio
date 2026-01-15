@@ -73,9 +73,9 @@ export type PortfolioData = {
 export const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Shubham Bhatt",
-    title: "Strategic DataOps Architect",
-    headline: "Bridging DataOps Engineering & Business Strategy",
-    subTitle: "Bridging the gap between Data Engineering & Business Strategy",
+    title: "Strategy & Analytics Enthusiast | MBA (Strategy & Consulting) | Bridging Data, Business & Decision-Making",
+    headline: "Bridging Analytics Thinking & Business Strategy",
+    subTitle: "Using data driven insight to shape smarter strategic decisions",
     email: "bhattshubhamofficial@gmail.com",
     phone: "+91 8527226410",
     linkedin: "https://www.linkedin.com/in/bhatt-shubham",

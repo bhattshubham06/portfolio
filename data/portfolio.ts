@@ -82,7 +82,7 @@ export const portfolioData: PortfolioData = {
     github: "https://github.com/bhattshubham06",
     location: "Dehradun / New Delhi",
     aboutMe:
-      "A Data-driven Strategist and MBA candidate specializing in Strategy and Consulting. With 2 years of experience as a DataOps Engineer and an Executive PG in Data Science from IIIT Bangalore, I excel at transforming complex data into high-level business ROI.",
+      "A Data driven Strategist and MBA candidate specializing in Strategy and Consulting. With 2 years of experience as a DataOps Engineer and an Executive PG in Data Science from IIIT Bangalore, I excel at transforming complex data into high-level business ROI.",
     resumeUrl: "/Shubham_Bhatt_resume.pdf",
     heroImage: {
       src: "/shubham-executive.jpeg",

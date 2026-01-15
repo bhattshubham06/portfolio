@@ -93,16 +93,16 @@ export const portfolioData: PortfolioData = {
     {
       institution: "University of Petroleum and Energy Studies",
       degree: "MBA (Strategy and Consulting)",
-      duration: "Expected June 2025",
+      duration: "Expected June 2027",
       location: "Dehradun",
-      highlights: ["Core Member of Koshu (Strategy Society)", "National Finalist at IIM-Indore"]
+      highlights: ["Core Member of Koshu (Strategy Society)", "Core Member of Case Cafe (Case Center)", "National Finalist at IIM-Indore"]
     },
     {
       institution: "International Institute of Information Technology, Bangalore",
       degree: "Executive Post Graduate Programme in Data Science",
       duration: "Oct 2021 - Nov 2022",
       score: "GPA: 3.30/4.00",
-      highlights: ["Specialization in Machine Learning and Data Ops"]
+      highlights: ["Specialization in Data Generalist"]
     },
     {
       institution: "Guru Gobind Singh Indraprastha University",
@@ -137,14 +137,7 @@ export const portfolioData: PortfolioData = {
       tools: ["Python", "Machine Learning", "Data Transformation", "Model Evaluation"],
       githubUrl: "https://github.com/bhattshubham06/Lead-Score"
     },
-    {
-      title: "CodeIQ",
-      objective: "Full-stack analytics validation platform for technical assessment.",
-      impact: "Reliable validation flows with auditability across services.",
-      metrics: "Traceable releases | Zero-downtime deploys",
-      tools: ["Full-stack Architecture", "Python", "Data Validation"],
-      githubUrl: "https://github.com/bhattshubham06/"
-    }
+    
   ],
   skills: {
     technical: ["Python", "SQL", "Tableau", "Pandas", "Scikit-learn", "MLOps", "Data Mining", "EDA", "Feature Engineering"],

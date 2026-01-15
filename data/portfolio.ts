@@ -82,7 +82,7 @@ export const portfolioData: PortfolioData = {
     github: "https://github.com/bhattshubham06",
     location: "Dehradun / New Delhi",
     aboutMe:
-      "A Data driven Strategist and MBA candidate specializing in Strategy and Consulting. With 2 years of experience as a DataOps Engineer and an Executive PG in Data Science from IIIT Bangalore, I excel at transforming complex data into high-level business ROI.",
+      "MBA student in Strategy & Consulting with a background in technology and data analytics. I aim to bridge data and business thinking to solve real world problems through structured analysis and strategic insight. Passionate about consulting, decision making, and creating impact through data driven strategies.",
     resumeUrl: "/Shubham_Bhatt_resume.pdf",
     heroImage: {
       src: "/shubham-executive.jpeg",
@@ -167,9 +167,8 @@ export const portfolioData: PortfolioData = {
       "Data Analysis",
       "Business Strategy",
       "MBA Strategy",
-      "Analytics",
       "MBA Strategy and Consulting",
-      "Data-Driven Decision Making",
+      "Data Driven Decision Making",
       "Strategy Consultant Aspirant",
       "Analytics Mindset",
       "Management Consulting",

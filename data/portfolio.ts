@@ -114,7 +114,7 @@ export const portfolioData: PortfolioData = {
   ],
   experience: [
     {
-      role: "DataOps Engineer",
+      role: "NA",
       duration: "2 Years (Pre-MBA)",
       description:
         "Operationalized ML models, built resilient data pipelines, and enforced data integrity for scalable analytics."
@@ -157,19 +157,24 @@ export const portfolioData: PortfolioData = {
       "Tutor children at Robin Academy for basic aptitude; coordinate food and clothing distribution drives."
   },
   seo: {
-    title: "Shubham Bhatt | Strategic DataOps Architect",
+    title: "Shubham Bhatt | Strategy & Analytics Professional",
     description:
-      "Strategic DataOps Architect blending engineering precision with MBA-backed strategy. Bridging DataOps engineering and business outcomes.",
+      "MBA in Strategy & Consulting with an analytics mindset, focused on data driven decision making, business strategy, and consulting oriented problem solving.",
     url: "https://shubham-bhatt.dev",
     siteName: "Shubham Bhatt Portfolio",
     keywords: [
       "Shubham Bhatt",
-      "DataOps",
-      "Strategic Architect",
+      "Data Analysis",
+      "Business Strategy",
       "MBA Strategy",
-      "Data Engineering",
       "Analytics",
-      "Portfolio"
+      "MBA Strategy and Consulting",
+      "Data-Driven Decision Making",
+      "Strategy Consultant Aspirant",
+      "Analytics Mindset",
+      "Management Consulting",
+      "Business Problem Solving",
+      "Strategy Portfolio",
     ],
     openGraphImage: "/shubham-executive.jpeg",
     twitterHandle: "@bhattshubham06"

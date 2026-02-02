@@ -221,8 +221,8 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
               className="h-60 w-full object-cover sm:h-64 md:h-80"
             />
           </div>
-          <div className="p-5 space-y-2">E
-            <p className="text-sm uppercase tracking-[0.16em] text-slate-400">xecutive Profile</p>
+          <div className="p-5 space-y-2">
+            <p className="text-sm uppercase tracking-[0.16em] text-slate-400">Executive Profile</p>
             <p className="font-display text-xl text-white">Strategy & Analytics Problem Solver</p>
             <p className="text-sm text-slate-300">
               Blending analytical rigor with business thinking to turn data into clear, decision ready insights.

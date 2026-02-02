@@ -15,7 +15,9 @@ const computeBasePath = () => {
   return "";
 };
 
-const kineticHeadlines = ["Business Analytics", "Data-Driven Strategy", "Consulting & Problem Solving"];
+const kineticHeadlines = ["Business Analytics", "Data-Driven Strategy", "Consulting & Problem Solving","Business Insights",
+  "Strategic Thinking",
+  "Structured Thinking"];
 
 type HeroProps = {
   personalInfo: PortfolioData["personalInfo"];
@@ -34,7 +36,7 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
     <section id="hero" className="grid gap-10 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
       <div className="space-y-8">
         <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-slate-300">
-          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-2">Strategic Architect</span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-2">Strategic Thinker & Problem Solver</span>
           <span className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
             <LineChart className="h-4 w-4 text-data" />
             Bridging Analytics & Business Strategy
@@ -149,7 +151,7 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
           <div className="mt-4 grid gap-3 md:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-xs uppercase tracking-[0.18em] text-slate-400">Dual Persona</p>
-              <p className="text-lg font-display text-white">Engineering × Strategy</p>
+              <p className="text-lg font-display text-white">Tech × Strategy</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-xs uppercase tracking-[0.18em] text-slate-400">Credentials</p>

@@ -156,7 +156,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
         <div className="space-y-1">
           <p className="text-sm uppercase tracking-[0.18em] text-slate-400">Strategic Matrix</p>
-          <h2 className="font-display text-3xl text-white">Bento grid of skills</h2>
+          <h2 className="font-display text-3xl text-white">Professional Toolkit</h2>
         </div>
         <Target className="h-8 w-8 text-data" />
       </div>
@@ -171,8 +171,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
             <BarChart3 className="h-6 w-6 text-data" />
           </div>
           <p className="mt-2 text-sm text-slate-300">
-            Python, SQL, and MLOps — anchored by Pandas and Scikit-learn — to deliver reliable analytics and governed
-            decisioning.
+            Python, SQL, Pandas, and Scikit-learn for reliable analytics that support strategic decision making.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
             {skills.technical.map((item) => (
@@ -196,7 +195,7 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
               <ShieldCheck className="h-6 w-6 text-gold" />
             </div>
             <p className="mt-2 text-sm text-slate-300">
-              Strategy & Consulting focus reinforced by competitive wins and governance-led delivery.
+              Strategy & consulting focus shaped through competitive wins and structured project delivery.
             </p>
           </div>
           <div className="mt-6 space-y-3">
@@ -222,11 +221,11 @@ export function BentoGrid({ skills, achievements, education, certifications }: B
               className="h-60 w-full object-cover sm:h-64 md:h-80"
             />
           </div>
-          <div className="p-5 space-y-2">
-            <p className="text-sm uppercase tracking-[0.16em] text-slate-400">Executive Profile</p>
-            <p className="font-display text-xl text-white">DataOps Architect & MBA Strategist</p>
+          <div className="p-5 space-y-2">E
+            <p className="text-sm uppercase tracking-[0.16em] text-slate-400">xecutive Profile</p>
+            <p className="font-display text-xl text-white">Strategy & Analytics Problem Solver</p>
             <p className="text-sm text-slate-300">
-              Blending data rigor with boardroom clarity to keep analytics trusted and actionable.
+              Blending analytical rigor with business thinking to turn data into clear, decision ready insights.
             </p>
           </div>
         </div>

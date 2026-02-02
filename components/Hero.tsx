@@ -15,7 +15,7 @@ const computeBasePath = () => {
   return "";
 };
 
-const kineticHeadlines = ["DataOps Engineering", "MLOps Governance", "Executive Analytics", "Business Strategy"];
+const kineticHeadlines = ["Business Analytics", "Data-Driven Strategy", "Consulting & Problem Solving"];
 
 type HeroProps = {
   personalInfo: PortfolioData["personalInfo"];
@@ -37,7 +37,7 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
           <span className="rounded-full border border-white/10 bg-white/5 px-3 py-2">Strategic Architect</span>
           <span className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
             <LineChart className="h-4 w-4 text-data" />
-            Bridging DataOps Engineering & Business Strategy
+            Bridging Analytics & Business Strategy
           </span>
         </div>
         <div className="space-y-4">
@@ -75,8 +75,8 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
             </div>
           </div>
           <p className="max-w-2xl text-lg text-slate-300">
-            Shubham Bhatt engineers resilient analytics systems and pairs them with MBA-backed strategic insight.
-            He makes executive decisions auditable, visual, and measurable across the DataOps lifecycle.
+            
+            Shubham Bhatt works at the intersection of analytics and business strategy. He focuses on turning complex data into clear insights that help leaders make better, more informed decisions.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
@@ -153,7 +153,7 @@ export function Hero({ personalInfo, resumeHref, experienceHighlight }: HeroProp
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-xs uppercase tracking-[0.18em] text-slate-400">Credentials</p>
-              <p className="text-sm text-slate-200">MBA (Strategy) · Exec PG in Data Science (IIIT Bangalore)</p>
+              <p className="text-sm text-slate-200">MBA (Strategy & Consulting) · Exe PGP in Data Science (IIIT Bangalore)</p>
             </div>
           </div>
         </motion.div>

@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
     location: "Dehradun / New Delhi",
     aboutMe:
       "I am an MBA Strategy & Consulting student with a pre-MBA background in data and technology. I work on business problems using structured thinking, analytics, and practical AI workflows. My focus is simple: define the problem clearly, design the right approach, and deliver outcomes that decision-makers can use.",
-    resumeUrl: "/Shubham_Bhatt_resume.pdf",
+    resumeUrl: "/Shubham_Bhatt_Resume.pdf",
     heroImage: {
       src: "/shubham-executive.jpeg",
       alt: "Portrait of Shubham Bhatt"

@@ -13,9 +13,15 @@ const sections = [
   { id: "contact", label: "Contact" }
 ];
 
+const withBasePath = (path: string) => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  return `${basePath}${path.startsWith("/") ? "" : "/"}${path}`;
+};
+
 export default function Home() {
   const { personalInfo, education, projects, experience, volunteering, skills, certifications, achievements } = portfolioData;
   const heroExperience = experience[0]?.role ? `${experience[0].role} · ${experience[0].duration}` : undefined;
+  const resumeLink = withBasePath(personalInfo.resumeUrl);
 
   return (
     <div className="relative min-h-screen bg-slate-50 text-slate-900">
@@ -173,7 +179,7 @@ export default function Home() {
               Contact Me
               <ArrowUpRight className="h-4 w-4" />
             </a>
-            <a href={personalInfo.resumeUrl} target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href={resumeLink} target="_blank" rel="noreferrer" className="btn-secondary">
               View Resume
               <ArrowUpRight className="h-4 w-4" />
             </a>

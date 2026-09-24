@@ -76,9 +76,9 @@ export type PortfolioData = {
 export const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Shubham Bhatt",
-    title: "MBA Candidate (Strategy & Consulting) | Analytics & AI Practitioner",
+    title: "Aspiring Consultant (Strategy & Consulting) | Analytics & AI Practitioner",
     headline: "I help teams turn data into practical business decisions",
-    subTitle: "Business strategy, analytics, and AI-first problem solving",
+    subTitle: "Business strategy, and analytics",
     email: "bhattshubhamofficial@gmail.com",
     phone: "+91 8527226410",
     linkedin: "https://www.linkedin.com/in/bhatt-shubham",
@@ -104,14 +104,14 @@ export const portfolioData: PortfolioData = {
       institution: "International Institute of Information Technology, Bangalore",
       degree: "Executive Post Graduate Programme in Data Science",
       duration: "Oct 2021 - Nov 2022",
-      score: "GPA: 3.30/4.00",
+      /*score: "GPA: 3.30/4.00",*/
       highlights: ["Specialization in Data Generalist"]
     },
     {
       institution: "Guru Gobind Singh Indraprastha University",
       degree: "Bachelor of Computer Application (BCA)",
       duration: "Aug 2016 - July 2019",
-      score: "GPA: 8.64/10.00",
+      /*score: "GPA: 8.64/10.00",*/
       location: "New Delhi"
     }
   ],
